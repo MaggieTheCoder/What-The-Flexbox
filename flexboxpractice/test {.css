@@ -1,0 +1,25 @@
+.test {
+    grid-template-areas: "logo" "nav" "main" "footer"
+}
+@media only screen and (min-width: 768px) {
+    .test {
+        grid-template-areas: "nav logo" "main main" "footer footer"
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .test {
+        grid-template-areas: "nav logo" "main main" "main main" "footer footer"
+    }
+}
+img {
+    grid-area: logo;
+    width: 100vw;
+}
+@media only screen and (min-width: 768px) {
+    img {
+        width: 65%;
+    }
+}
+nav {
+    grid-area: nav;
+}
